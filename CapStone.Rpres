@@ -1,0 +1,47 @@
+Text generator 
+========================================================
+author: Zanin Pavel
+date: 7/15/2016
+autosize: true
+
+About app
+========================================================
+
+The application is designed for sequential text generating. 
+
+App screenshot
+========================================================
+
+![screen](Screen.png) 
+
+User manual
+========================================================
+
+### Step 1     
+Enter one word or part of phrase in input field and click "Predict next word/s"
+
+After few seconds will generated continuation for your input.
+
+### Step 2   
+Copy the appropriate continuation and add it to your input. Then repeat Step 1.
+
+
+About prediction algorithm
+========================================================
+     
+1 Preprocession input:   
+* removing punctuations, numbers, english stopwords and whitespace;    
+* convert to lowercase.    
+
+2 Searching cleaned input in prepared 2Gram, 3Gram and 4Gram sets. In results will be shown most frequent 3 - 2Gram, 2 - 3Gram, 2 - 4Gram.   
+
+2Gram, 3Gram and 4Gram sets was generated from term-generated matrix that build on 10% sample from U.S. blogs, U.S. news and U.S. twitter which can be downloaded from [this](https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip)
+
+
+
+Links
+========================================================
+
+[Link to project on GitHUB](https://github.com/Filareth2015/Data-products-development)     
+
+[Link to app on Shinyapp](https://zaninpy.shinyapps.io/Text_generator/)
